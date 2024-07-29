@@ -1,7 +1,7 @@
 import React from "react";
 
 const Home = () => {
-	return <main></main>;
+	return <main>회원가입 모달</main>;
 };
 
 export default Home;
