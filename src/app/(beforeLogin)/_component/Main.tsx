@@ -1,22 +1,23 @@
-import styles from "./page.module.css";
+import styles from "@/app/(beforeLogin)/_component/main.module.css";
 import Image from "next/image";
+import zLogo from "../../../../public/zlogo.png";
 import Link from "next/link";
 
-export default function Home(): JSX.Element {
+export default function Main() {
 	return (
-		<div>
+		<>
 			<div className={styles.left}>
 				<Image
-					src={logo}
+					src={zLogo}
 					alt='logo'
 				/>
 			</div>
-			<div>
+			<div className={styles.right}>
 				<h1>지금 일어나고 있는 일</h1>
 				<h2>지금 가입하세요.</h2>
 				<Link
 					href='/i/flow/signup'
-					className='{styles.signup}'
+					className={styles.signup}
 				>
 					계정 만들기
 				</Link>
@@ -28,6 +29,6 @@ export default function Home(): JSX.Element {
 					로그인
 				</Link>
 			</div>
-		</div>
+		</>
 	);
 }
