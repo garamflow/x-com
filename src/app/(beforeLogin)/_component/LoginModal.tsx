@@ -1,9 +1,9 @@
 "use client";
 
-import styles from "@/app/(beforeLogin)/_component/login.module.css";
 import { useState } from "react";
+import styles from "@/app/(beforeLogin)/_component/login.module.css";
 
-export default function LoginModal() {
+const LoginModal = () => {
 	const [id, setId] = useState();
 	const [password, setPassword] = useState();
 	const [message, setMessage] = useState();
@@ -13,7 +13,6 @@ export default function LoginModal() {
 	const onChangeId = () => {};
 
 	const onChangePassword = () => {};
-
 	return (
 		<div className={styles.modalBackground}>
 			<div className={styles.modal}>
@@ -83,4 +82,6 @@ export default function LoginModal() {
 			</div>
 		</div>
 	);
-}
+};
+
+export default LoginModal;
